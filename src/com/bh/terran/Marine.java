@@ -1,8 +1,9 @@
 package com.bh.terran;
 
+import com.bh.unit.Attacker;
 import com.bh.unit.Unit;
 
-public class Marine extends Unit{ /*import없이 이렇게 쓰기 가능 com.bh.unit.Unit*/
+public class Marine extends Unit implements Attacker{ //import없이 이렇게 쓰기 가능 com.bh.unit.Unit
 	//unit의 내용을 상속받는다는 뜻
 	
 	
@@ -30,9 +31,12 @@ public class Marine extends Unit{ /*import없이 이렇게 쓰기 가능 com.bh.
 	public void move() {
 		System.out.println("뛰어다님");
 	}
-	
 
-	public void shoot() {
+	public void attack() {
+		this.shoot();
+	}
+		
+	private void shoot() {
 		System.out.println("총쏘기");
 	}
 	

@@ -17,6 +17,9 @@ public abstract class Unit {
 	//생성자
 	public abstract void move ();
 	
+	public abstract void attack();
+	
+	//
 	public void info() {
 		System.out.println("Super Info");
 	}
