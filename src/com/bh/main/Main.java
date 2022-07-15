@@ -1,34 +1,60 @@
 package com.bh.main;
 
-import com.bh.terran.Marine;
-import com.bh.terran.Scv;
-import com.bh.unit.Unit;
+import com.bh.util.Collection;
+import com.bh.util.CollectionStack;
 
-public class Main {
+public class Main implements CollectionStack{
 
 	public static void main(String[] args) {
-	//  super(); 있는데 생략ㅓㅣㅁ
-		Marine m1 = new Marine();
-		Scv s1 = new Scv();
+	
+//1. com.bh.util.CollectionStack
+//add 메서드 호출 -> 입력받은 새로운 숫자 추가 (무조건 0번 인덱스에)
+//remove 메서드 호출 -> 0번 인덱스 숫자 삭제
 		
-		m1.setHp(30);
-		m1.info(); //완성된 메소드라서 사용가능
-		m1.move(); //오버라이딩 해서 사용 가능
+//2. com.bh.util.CollectionQue
+//add -> 새로운 숫자 추가 (무조건 0번)
+//remove -> 마지막 인덱스 번호 삭제
 		
-		//Marine is a unit
-		//Scv is a unit / SCv는 유닛 타입이다
+//3. com.bh.util.CollectionSet
+//add -> 새로운 숫자 마지막에 추가
+//		단 중복되지 않는 숫자만 추가
+//remove -> 삭제할 숫자 입력받아서 일치하는 숫자 삭제
 		
-		Unit unit = m1;
+//전부 새로 만들어진 배열 리턴		
+
 		
-		System.out.println(unit.getColor());
-		System.out.println(unit.getHp());
-		System.out.println(unit.getName());
-		//System.out.println(unit.getw); //Marine의 weapon은 불러올수없음 -> unit이 아는 정보는 name까지
+//===========================================		
+//		//test data set
+//		int [] nums = {1, 2, 3};
+//		
+//		collectionStack.add(); //-> {4, 1, 2, 3}
+//		collectionStck.remove(); //-> {2, 3}
+//============================================
 		
-		//m1 = unit; 불가능
-		m1 = (Marine)unit; //유닛을 마린타입으로 형변환해서 넣기
+		CollectionStack cs = new CollectionStack() {
+			
+			@Override
+			public int[] remove(int[] numbers) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+			@Override
+			public int[] add(int[] numbers) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+		};
 		
-		System.out.println(m1.getWeapon()); //weapon 불러오기 가능해짐 (상속과 다형성)
+		
+		int [] nums = {5, 6, 7};
+		
+		cs.add();
+		
+		cs.remove();
+		
+		
+		
 		
 	}
 
