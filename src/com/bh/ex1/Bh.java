@@ -2,6 +2,8 @@ package com.bh.ex1;
 
 public class Bh {
 	
+	//fix-study 버전관리중
+	
 	private String name;
 	private int age;
 	
