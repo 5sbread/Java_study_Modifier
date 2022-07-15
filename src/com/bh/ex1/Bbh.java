@@ -1,21 +1,21 @@
 package com.bh.ex1;
 
-public class Bh {
+public class Bbh {
 	
 	private String name;
 	private int age;
 	
-	public static Bh bh = null;
+	public static Bbh bh = null;
 
 	//기본생성자
-	public Bh() {}
+	public Bbh() {}
 	
 	//    인스턴스->클래스가 됨 / 객체없이 사용가능
-	public static Bh getInstance() {
-		if(Bh.bh == null ) {
-			Bh.bh = new Bh();
+	public static Bbh getInstance() {
+		if(Bbh.bh == null ) {
+			Bbh.bh = new Bbh();
 		}
-		return Bh.bh;
+		return Bbh.bh;
 	}
 		
 	

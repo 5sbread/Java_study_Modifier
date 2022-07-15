@@ -1,6 +1,6 @@
 package com.bh.animal;
 
-public class Zoo {
+public class Zzoo {
 	//멤버변수
 	//접근지정자 [그외지정자] 데이터타입 변수명;
 	//클래스변수
@@ -19,7 +19,7 @@ public class Zoo {
 	//클래스메서드
 	public static void info () {
 		System.out.println("Static Method");
-		System.out.println(Zoo.title);
+		System.out.println(Zzoo.title);
 //		System.out.println(price);
 //		Zoo.getPrice(); <- 메서드가 만들어지기 전이라서 에러
 //클래스메서드는 인스턴스 메서드 호출 불가
@@ -29,8 +29,8 @@ public class Zoo {
 	//인스턴스메서드
 	public void getPrice() {
 		System.out.println(price);
-		System.out.println(Zoo.title);
-		Zoo.info();
+		System.out.println(Zzoo.title);
+		Zzoo.info();
 	}
 	
 	

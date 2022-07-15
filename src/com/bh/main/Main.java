@@ -1,23 +1,15 @@
 package com.bh.main;
 
-import com.bh.animal.Cat;
-import com.bh.animal.Human;
-import com.bh.animal.Zoo;
+import com.bh.terran.Marine;
 
 public class Main {
 
 	public static void main(String[] args) {
-//		//생성자 만들기 (없으면 컴파일러가 디폴트 생산자를 만들어줌)
-//		Cat cat = new Cat();
-////		생성자
-//		cat.sound();
-//		//cat.age = 5;
-		Human human = new Human();
-		human.setAge(250);
-		human.info();
-		//-----------------------
-		System.out.println(Zoo.title);
-		Zoo.info();
+	//  super(); 있는데 생략ㅓㅣㅁ
+		Marine m1 = new Marine();
+		m1.setHp(30);
+		m1.info(); //완성된 메소드라서 사용가능
+		m1.move(); //오버라이딩 해서 사용 가능
 	}
 
 }
