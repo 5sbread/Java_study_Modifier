@@ -14,7 +14,7 @@ public abstract class Unit {
 		System.out.println("Super 생성자");
 	}
 	
-	//
+	//생성자
 	public abstract void move ();
 	
 	public void info() {
