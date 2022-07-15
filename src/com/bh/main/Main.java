@@ -19,7 +19,7 @@ public class Main {
 		
 		
 		Client client = new Client();
-		client.buy(tv.getMoney(),tv.getPoint());
+		client.buy(computer);
 		
 		
 		

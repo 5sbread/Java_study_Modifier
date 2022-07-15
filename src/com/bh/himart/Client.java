@@ -23,14 +23,14 @@ public class Client {
 	}
 	
 	//오버로딩
-	public void buy(Computer computer) {
-		this.price = this.price - C;
-		this.point = this.point - point;
+	public void buy(Product product) {
+		this.price = this.price - product.getMoney();
+		this.point = this.point - product.getPoint();
 		
 		System.out.println("잔액 : "+this.price);
 		System.out.println("남은 포인트 : "+this.point);
 	}
-	}
+
 	
 	
 	
