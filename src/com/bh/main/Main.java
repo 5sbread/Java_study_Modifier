@@ -31,27 +31,10 @@ public class Main implements CollectionStack{
 //		collectionStck.remove(); //-> {2, 3}
 //============================================
 		
-		CollectionStack cs = new CollectionStack() {
-			
-			@Override
-			public int[] remove(int[] numbers) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-			
-			@Override
-			public int[] add(int[] numbers) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-		};
+		CollectionStack cs = new CollectionStack();
 		
-		
-		int [] nums = {5, 6, 7};
-		
-		cs.add();
-		
-		cs.remove();
+		cs.add(null);
+		cs.remove(null);
 		
 		
 		
