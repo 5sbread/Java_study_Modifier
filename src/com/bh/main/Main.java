@@ -3,7 +3,7 @@ package com.bh.main;
 import com.bh.util.Collection;
 import com.bh.util.CollectionStack;
 
-public class Main implements CollectionStack{
+public class Main{
 
 	public static void main(String[] args) {
 	
@@ -33,8 +33,7 @@ public class Main implements CollectionStack{
 		
 		CollectionStack cs = new CollectionStack();
 		
-		cs.add(null);
-		cs.remove(null);
+		
 		
 		
 		
